@@ -8,7 +8,7 @@ menu = ["CHROMATHOGRAPHY GAS", "HIGH PEFORMANCE LIQUID CHROMATHOGRAPHY"]
 choice = st.sidebar.selectbox("select a tool",menu)
 
 if choice == "CHROMATHOGRAPHY GAS":
-    st.title("CHROMATHOGRAPHY GAS")
+    st.title("CHROMATHOGRAPHY GAS Single Standart")
     st.write("CARA MENGGUNAKAN GAS CHROMATOGRAPHY :")
     st.write("1. Persiapan sampel: Sampel harus diolah dan di reduksi sesuai dengan matriksnya sebelum dimasukkan ke dalam kolom GC.")
     st.write("2. Inisialisasi kolom: Kolom GC harus dipersiapkan dengan memasukkan bahan pengisi kolom dan memastikan bahwa kolom tersebut dalam kondisi stabil.")
@@ -32,7 +32,7 @@ if choice == "CHROMATHOGRAPHY GAS":
         
 
 elif choice == "HIGH PEFORMANCE LIQUID CHROMATHOGRAPHY":
-    st.title("HIGH PEFORMANCE LIQUID CHROMATHOGRAPHY")
+    st.title("HIGH PEFORMANCE LIQUID CHROMATHOGRAPHY Single Standart")
     st.write("CARA MENGGUNAKAN HIGH PEFORMANCE LIQUID CHROMATHOGRAPHY :")
     st.write("1. Persiapan sampel: Sampel yang akan dianalisis harus disiapkan terlebih dahulu, misalnya dengan cara pengambilan atau ekstraksi.")
     st.write("2. Persiapan fase gerak dan fase diam: Fase gerak adalah cairan yang digunakan untuk memompa sampel melalui kolom. Fase diam adalah bahan pengisi kolom yang memiliki sifat-sifat tertentu, seperti pori-pori dan ukuran butir yang dapat mempengaruhi pemisahan senyawa-senyawa dalam sampel.")
