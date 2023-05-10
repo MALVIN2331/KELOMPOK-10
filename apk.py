@@ -43,6 +43,6 @@ elif choice == "HIGH PEFORMANCE LIQUID CHROMATHOGRAPHY":
     LuasAreaSTD = st.number_input("enter the Luas Area STD:", min_value=0.0, step=0.1)
     KonsentrasiSTD = st.number_input("enter the KONSENTRASI STANDAR:", min_value=0.0, step=0.1)
     
-if st.button("Calculate"):
-    KADARANALIT = LuasAreaSPL*KonsentrasiSTD/LuasAreaSTD
-    st.write(f"Hasil KADAR ANALIT ADALAH {KADARANALIT:.2f} %")
+    if st.button("Calculate"):
+        KADARANALIT = LuasAreaSPL*KonsentrasiSTD/LuasAreaSTD
+        st.write(f"Hasil KADAR ANALIT ADALAH {KADARANALIT:.2f} %")
