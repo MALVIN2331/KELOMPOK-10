@@ -26,7 +26,7 @@ if choice == "CHROMATHOGRAPHY GAS":
     PersenLarutanSPL = st.number_input("enter the PersenLarutanSPL:", min_value=0.0, step=0.1)
     FP = st.number_input("enter the FP:", min_value=0.0, step=0.1)
     
-    if st.button("Calculate HPLC"):
+    if st.button("Calculate GC"):
         KADARANALIT = LuasAreaSPL*PersenLarutanSPL*FP/LuasAreaSTD
         st.write(f"Hasil KADAR ANALIT ADALAH {KADARANALIT:.2f} %")
         
@@ -52,6 +52,6 @@ elif choice == "HIGH PEFORMANCE LIQUID CHROMATHOGRAPHY":
     LuasAreaSTD = st.number_input("enter the Luas Area STD:", min_value=0.0, step=0.1)
     KonsentrasiSTD = st.number_input("enter the KONSENTRASI STANDAR:", min_value=0.0, step=0.1)
     
-    if st.button("Calculate GC"):
+    if st.button("Calculate HPLC"):
         KADARANALIT = LuasAreaSPL*KonsentrasiSTD/LuasAreaSTD
         st.write(f"Hasil KADAR ANALIT ADALAH {KADARANALIT:.2f} %")
